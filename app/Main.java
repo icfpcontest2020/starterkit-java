@@ -9,7 +9,7 @@ class Main {
         System.out.println("ServerUrl: " + serverUrl + "; PlayerKey: " + playerKey);
 
         var request = HttpRequest.newBuilder()
-                .uri(URI.create(serverUrl + "?player_key=" + playerKey))
+                .uri(URI.create(serverUrl + "?playerKey=" + playerKey))
                 .build();
 
         var response = HttpClient.newHttpClient()
